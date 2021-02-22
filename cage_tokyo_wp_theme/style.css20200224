@@ -40,9 +40,6 @@ img {
 	width: 100%;
 	height: auto;
 }
-.aff img {
-	width: auto !important;
-}
 a {
 	color: #2baae1;
 	text-decoration: none;
@@ -52,10 +49,6 @@ a {
 a:hover {
 	color: #ff6644;
 	opacity: 0.6;
-}
-sup {
-	vertical-align: super;
-	font-size: smaller;
 }
 .container {
 	padding-right: 24px;
@@ -68,8 +61,8 @@ header .container {
 	justify-content: space-between;
 }
 .header_logo {
-	width: 140px;
-	height: 32px;
+	width: 120px;
+	height: 24px;
 }
 .header_about {
 	font-size: 1.2rem;
@@ -207,7 +200,6 @@ article {
 }
 .article_desc {
 	font-size: 1.6rem;
-	margin-bottom: 80px;
 }
 .article_desc p {
 	margin-bottom: 20px;
@@ -224,15 +216,10 @@ article {
 	font-size: 1.6rem;
 	margin-bottom: 20px;
 }
-.article_desc ul,
-.article_desc ol {
+.article_desc ul {
 	background-color: #f8f8f8;
-	padding: 25px 20px 20px 50px;
+	padding: 25px 20px 20px 40px;
 	margin-bottom: 20px;
-}
-.article_desc ul li {
-	padding-top: 15px;
-	padding-bottom: 15px;
 }
 .article_desc blockquote,
 .article_desc pre {
@@ -343,7 +330,6 @@ footer .container {
 }
 .footer_about_desc {
 	font-size: 1.2rem;
-	margin-bottom: 15px;
 }
 .footer_cat {
 	margin-bottom: 40px;
@@ -497,7 +483,6 @@ address {
 	width: calc(70% - 20px);
 }
 .related_link_ttl {
-	font-size: 1.6rem;
 }
 .related_link_desc {
 	font-size: 14px;
@@ -547,22 +532,6 @@ address {
 	top: 13px;
 	left: 10px;
 	transform: rotate(45deg);
-}
-/* recommend */
-.recommend {
-	padding-top: 20px;
-}
-.recommend p {
-	margin-bottom: 15px;
-}
-.recommend img.ban-sakura-standard {
-	width: 100%;
-	max-width: 468px;
-	height: auto;
-}
-.recommend img.spacer {
-	width: 1px !important;
-	height: 1px !important;
 }
 @media screen and (min-width: 768px) {
 
@@ -664,10 +633,9 @@ address {
 		font-size: 1.8rem;
 		margin-bottom: 20px;
 	}
-	.article_desc ul,
-	.article_desc ol {
+	.article_desc ul {
 		background-color: #f8f8f8;
-		padding: 25px 20px 20px 60px;
+		padding: 25px 20px 20px 40px;
 		margin-bottom: 40px;
 	}
 	.article_desc blockquote {
@@ -675,9 +643,6 @@ address {
 	}
 	.article_desc pre {
 		margin-bottom: 40px;
-	}
-	.article_desc figure {
-		margin-bottom: 0;
 	}
 
 	aside {

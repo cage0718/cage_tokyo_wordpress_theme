@@ -23,14 +23,6 @@ add_filter('excerpt_more', 'my_excerpt_more');
 add_theme_support('post-thumbnails');
 
 /*
- * stylesheet.css出力
- */
-function read_enqueue_styles() {
-	wp_enqueue_style( 'main-style', get_stylesheet_uri() );
-}
-add_action( 'wp_enqueue_scripts', 'read_enqueue_styles' );
-
-/*
 	最終更新日表示
 	参考：http://www.seotemplate.biz/blog/wordpress-tips/4019/
 	get_the_modified_time()の結果がget_the_time()より古い場合はget_the_time()を返す。
@@ -225,30 +217,3 @@ function pagination( $pages, $paged, $range = 2, $show_only = false ) {
 		echo '</div>';
 	}
 }
-
-// カテゴリーrewrite
-//「WordPress でカテゴリーアーカイブのURLに /category を入れたくない問題を力技で解決する」hi3103の備忘録
-// https://hi3103.net/notes/web/1329
-function custom_rewrite_basic() {
-	//パイプ区切りのカテゴリーリスト作成
-	$cats = get_categories( $args );
-	$args = array(
-		'hide_empty' => 0,
-		'taxonomy' => 'category',
-	);
-	$catList = '';
-	$i = 0;
-	foreach ($cats as $cat) {
-		if($i!=0){ $catList .= '|'; }
-		$catList .= $cat->slug;
-		$i++;
-	}
-	$catList = '('.$catList.')';
-	//リライトルールを追加
-	add_rewrite_rule($catList.'/feed/(feed|rdf|rss|rss2|atom)/?$', 'index.php?category_name=$matches[1]&feed=$matches[2]', 'top');
-	add_rewrite_rule($catList.'/(feed|rdf|rss|rss2|atom)/?$', 'index.php?category_name=$matches[1]&feed=$matches[2]', 'top');
-	add_rewrite_rule($catList.'/embed/?$', 'index.php?category_name=$matches[1]&embed=true', 'top');
-	add_rewrite_rule($catList.'/page/?([0-9]{1,})/?$', 'index.php?category_name=$matches[1]&paged=$matches[2]', 'top');
-	add_rewrite_rule($catList.'/?$', 'index.php?category_name=$matches[1]', 'top');
-}
-add_action('init', 'custom_rewrite_basic');

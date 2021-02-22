@@ -11,6 +11,7 @@
 						ウェブから色々と誰かの発信してくれた情報に助けられ、今の自分が作り出されています。<br>
 						過去の自分と同じような状況にある人たちが少しでも自身のために役立ててくれることを思って、プログラミングやウェブサイト制作、ウェブ運営のことを中心に発信しています。
 					</p>
+					<p><a href="" target="_new" rel="noopener noreferrer">Twitter:cage_yoshida</a></p>
 				</section>
 				<section class="footer_cat">
 					<h2 class="footer_cat_ttl">カテゴリー</h2>
@@ -25,7 +26,7 @@
 					</ul>
 				</section>
 				<section class="footer_tw">
-					<a class="twitter-timeline" href="https://twitter.com/cage_yoshida?ref_src=twsrc%5Etfw">Tweets by cage_yoshida</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 				</section>
 			</div>
 			<address>© cage.tokyo</address>

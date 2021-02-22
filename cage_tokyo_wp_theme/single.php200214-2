@@ -34,23 +34,7 @@ get_header(); ?>
 						<div class="article_desc">
 							<?php the_content(); ?>
 						</div>
-
-						<?php if($prime_cat['slug'] == "wordpress" && $post->ID != 1125): ?>
-							<section class="related">
-								<h2 class="related_ttl">関連記事</h2>
-								<div class="related_link"><a href="https://cage.tokyo/wordpress/how2start-wordpress/"><figure class="related_link_fig"><img  data-src="https://cage.tokyo/wp-content/uploads/2020/04/25C4D60B-F73D-4377-83F9-1FF17D2E18D1-150x150.jpeg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://cage.tokyo/wp-content/uploads/2020/04/25C4D60B-F73D-4377-83F9-1FF17D2E18D1-150x150.jpeg"></noscript></figure><div class='related_link_box'><div class='related_link_ttl'>WordPressブログの始め方</div><p class='related_link_desc'>WordPressでブログ始めよう！という方へ。WordPressを運用するサーバー選定からインストールまで、順を追ってやさしく説明しています。</p></div></a></div>
-							</section>
-						<?php endif; ?>
-
-						<?php if($prime_cat['slug'] == "wordpress"): ?>
-							<div class="recommend">
-								<p>[PR] 当ブログ「cage.tokyo」はさくらのレンタルサーバ・スタンダードで運用しています。WordPressでのブログが運用しやすく、おすすめです。</p>
-								<a href="https://px.a8.net/svt/ejp?a8mat=3B7C11+5ZIXRM+D8Y+69HA9" rel="nofollow">
-								<img border="0" width="468" height="120" alt="" src="https://www21.a8.net/svt/bgt?aid=200216485362&wid=001&eno=01&mid=s00000001717001052000&mc=1" class="ban-sakura-standard"></a>
-								<img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=3B7C11+5ZIXRM+D8Y+69HA9" alt="" class="spacer">
-							</div>
-						<?php endif;?>
-
+						<!--
 						<ul class="article_sns">
 							<li class="article_sns_item twitter">
 								<a href="http://twitter.com/share?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>-cage.tokyo" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon_twitter.svg" alt="Twitterでシェア"></a>
@@ -65,6 +49,7 @@ get_header(); ?>
 								<a href="http://getpocket.com/edit?url=<?php the_permalink(); ?>&title=<?php the_title(); ?>" rel="nofollow" rel="nofollow" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon_pocket.svg" alt="Pocketに保存"></a>
 							</li>
 						</ul>
+						-->
 						<?php endwhile; endif; ?>
 					</article>
 				<?php

@@ -8,9 +8,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 
 	<link rel='stylesheet' href='<?php bloginfo('template_url'); ?>/assets/css/reset.css' type='text/css' media='all' />
+	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
 	<link rel="icon" sizes="36x36" href="<?php bloginfo('template_url'); ?>/assets/img/favicon.ico">
 	<title><?php wp_title(); ?></title>
-	<script data-ad-client="ca-pub-8855040631367821" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<?php wp_head(); ?>
 </head>
 <body>
